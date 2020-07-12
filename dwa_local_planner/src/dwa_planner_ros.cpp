@@ -305,7 +305,7 @@ namespace dwa_local_planner {
       } else {
         ROS_WARN_NAMED("dwa_local_planner", "DWA planner failed to produce path.");
         std::vector<geometry_msgs::PoseStamped> empty_plan;
-        publishGlobalPlan(empty_plan);
+        // publishGlobalPlan(empty_plan);
       }
       return isOk;
     }
